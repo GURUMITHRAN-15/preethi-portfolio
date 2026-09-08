@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="background">
+    <div class="glass-card">
+      <h2>Welcome Back</h2>
+      
+      <!-- Social Login Buttons -->
+      <div class="social-buttons">
+        <button class="social-btn google">
+          <i class="fab fa-google"></i> Google
+        </button>
+        <button class="social-btn github">
+          <i class="fab fa-github"></i> GitHub
+        </button>
+      </div>
+      
+      <div class="divider">
+        <span>or</span>
+      </div>
+      
+      <!-- Login Form -->
+      <form id="loginForm">
+        <div class="input-group">
+          <input type="text" id="username" required>
+          <label for="username">Username</label>
+        </div>
+        
+        <div class="input-group">
+          <input type="password" id="password" required>
+          <label for="password">Password</label>
+          <span class="toggle-password" onclick="togglePassword()">
+            <i class="fas fa-eye"></i>
+          </span>
+        </div>
+        
+        <div class="options">
+          <label class="remember-me">
+            <input type="checkbox" id="remember"> Remember me
+          </label>
+          <a href="#" class="forgot-password">Forgot password?</a>
+        </div>
+        
+        <button type="submit" class="login-btn">Login</button>
+        
+        <p class="signup-link">
+          Don't have an account? <a href="#">Sign up</a>
+        </p>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
